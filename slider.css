@@ -1,0 +1,57 @@
+.slide {
+  flex: 0 0 100%;
+}
+.slider-content {
+  display: flex;
+  flex: 0 0 100%;
+  transition: all 0.25s linear;
+}
+.slider-control {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%) translateZ(0);
+  padding: 0 15px;
+}
+.left-arrow,
+.right-arrow {
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: 700;
+  color: #31708f;
+  opacity: 0.7;
+  transition: color 0.25s;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+  color: #91a1af;
+}
+.left-arrow:before {
+  content: '‹';
+}
+.right-arrow:after {
+  content: '›';
+}
+.slider-pages {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.slider-page-caption {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.slider-page-caption.active {
+  background: #31708f;
+  width: 17px;
+  height: 17px;
+  margin: 0 2px;
+}
