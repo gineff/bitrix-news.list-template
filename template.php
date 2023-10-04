@@ -1,8 +1,8 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
 $this->addExternalJS("https://unpkg.com/react@18/umd/react.development.js");
 $this->addExternalJS("https://unpkg.com/react-dom@18/umd/react-dom.development.js");
-$this->addExternalJS("/local/components/gineff/news.list/templates/bitrix-news.list-template/slider.js");
-$this->addExternalCSS("/local/components/gineff/news.list/templates/bitrix-news.list-template/slider.css");
+$this->addExternalJS("/local/components/gineff/news.list/templates/bitrix_news.list_slider.template/slider.js");
+$this->addExternalCSS("/local/components/gineff/news.list/templates/bitrix_news.list_slider.template/slider.css");
 $this->setFrameMode(true);
 ?>
 
